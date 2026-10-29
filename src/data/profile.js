@@ -78,3 +78,56 @@ export const education = {
   focus:
     'Pengembangan Perangkat Lunak, Basis Data, Analisis Sistem, dan Kecerdasan Buatan.',
 }
+
+export const projects = [
+  {
+    title: 'Analisis Karier Pemain Sepak Bola Indonesia di Luar Negeri (2018–2026)',
+    category: 'Data Analysis',
+    period: 'Oktober 2026',
+    description:
+      'Mengumpulkan, memverifikasi, dan menganalisis perjalanan karier 38 pemain Indonesia ' +
+      'yang bermain di luar negeri — membandingkan pemain yang berangkat dari liga domestik ' +
+      '(Lokal) dengan pemain yang tumbuh di luar negeri (Diaspora) untuk menjawab satu ' +
+      'pertanyaan: kenapa banyak pemain Indonesia yang abroad akhirnya pulang kampung?',
+    stats: [
+      { value: '38', label: 'Pemain dianalisis' },
+      { value: '91', label: 'Masa bermain (spell) tercatat' },
+      { value: '54,5%', label: 'Spell lokal berakhir pulang ke Indonesia' },
+      { value: '12,3 vs 38,3', label: 'Rata-rata penampilan liga per spell: Lokal vs Diaspora' },
+    ],
+    findings: [
+      'Pemain lokal rata-rata hanya tampil 12,3 kali per spell di liga luar negeri (median 7,5), berbanding 38,3 kali untuk pemain diaspora — dan 9 spell berakhir dengan 0 penampilan.',
+      'Belanda adalah negara tujuan utama (24 dari 91 spell), sedangkan jalur abroad pemain lokal yang paling berhasil justru Asia: Asnawi Mangkualam membangun kariernya di Korea Selatan dan Thailand.',
+      'Penyerang adalah posisi yang paling sulit menembus abroad (rata-rata 9,8 penampilan per spell); kiper dan bek adalah yang paling bertahan lama.',
+    ],
+    process: [
+      'Pengumpulan data dari sumber publik (Wikipedia, Transfermarkt, FotMob)',
+      'Verifikasi silang setiap baris data — 25+ koreksi ditemukan dan didokumentasikan',
+      'Pembersihan & standarisasi data (satu baris = satu masa bermain di satu klub)',
+      'Analisis dengan SQL & Python (Pandas), visualisasi dengan Matplotlib',
+    ],
+    tags: ['SQL', 'Python', 'Pandas', 'Matplotlib', 'Microsoft Excel', 'Data Cleaning', 'Data Visualization'],
+    charts: [
+      {
+        src: 'grafik/grafik2_lokal_vs_diaspora.png',
+        alt: 'Grafik perbandingan rata-rata penampilan liga per spell dan persentase spell yang berakhir pulang antara pemain lokal dan diaspora',
+        caption: 'Perbandingan inti: pemain lokal vs diaspora',
+      },
+      {
+        src: 'grafik/grafik1_negara_tujuan.png',
+        alt: 'Grafik batang negara tujuan pemain Indonesia di luar negeri, Belanda terbanyak dengan 24 spell',
+        caption: 'Negara tujuan terbanyak: Belanda (24 spell)',
+      },
+      {
+        src: 'grafik/grafik3_timeline.png',
+        alt: 'Grafik garis jumlah pemain abroad yang aktif per tahun 2018 sampai 2026 untuk pemain lokal dan diaspora',
+        caption: 'Dua gelombang berlawanan arah: lokal mereda setelah 2022, diaspora memuncak 2023–2025',
+      },
+      {
+        src: 'grafik/grafik4_distribusi_penampilan.png',
+        alt: 'Grafik distribusi jumlah penampilan liga per spell untuk pemain lokal dan diaspora',
+        caption: 'Distribusi penampilan: mayoritas spell lokal berakhir di bawah 10 penampilan',
+      },
+    ],
+  },
+]

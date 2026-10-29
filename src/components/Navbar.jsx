@@ -3,6 +3,7 @@ import { profile } from '../data/profile'
 const links = [
   { href: '#profil', label: 'Profil' },
   { href: '#pengalaman', label: 'Pengalaman' },
+  { href: '#proyek', label: 'Proyek' },
   { href: '#keahlian', label: 'Keahlian' },
   { href: '#pendidikan', label: 'Pendidikan' },
   { href: '#kontak', label: 'Kontak' },
