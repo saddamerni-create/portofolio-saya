@@ -130,4 +130,48 @@ export const projects = [
       },
     ],
   },
+  {
+    title: 'Analisis Sentimen Komentar Threads: 2 Tahun Prabowo-Gibran & Demo',
+    category: 'Data Analysis — Social Media',
+    period: 'Oktober 2026',
+    description:
+      'Mengumpulkan 569 komentar publik dari thread-thread Threads bertema dua tahun pemerintahan ' +
+      'Prabowo-Gibran dan aksi demo, lalu mengukur nada sentimennya (positif, negatif, netral) untuk ' +
+      'melihat bagaimana warganet sebenarnya berbicara di balik postingan yang viral.',
+    stats: [
+      { value: '569', label: 'Komentar publik dianalisis (dari 1.703 yang tersedia)' },
+      { value: '7', label: 'Thread induk bertema 2 tahun Prabowo-Gibran & demo' },
+      { value: '69,8%', label: 'Komentar bernada netral — mayoritas ternyata tidak emosional' },
+      { value: '2,4 : 1', label: 'Negatif vs positif di antara komentar yang bernada jelas' },
+    ],
+    findings: [
+      'Mayoritas komentar (69,8%) bernada netral — percakapan di thread viral ternyata tidak seemosional kesan yang ditimbulkan postingan induknya; komentar negatif 21,3% dan positif 9,0%.',
+      'Nada thread induk menular: thread dengan postingan paling keras menghasilkan proporsi komentar negatif tertinggi (±29%), sedangkan satu-satunya thread bernada pro-pemerintah hanya menarik 5 komentar.',
+      'Nada positif tidak sama dengan dukungan ke pemerintah — komentar positif dengan like terbanyak justru berisi semangat mendukung aksi demo. Analisis ini mengukur nada bahasa, bukan keberpihakan politik.',
+    ],
+    process: [
+      'Pengumpulan data langsung dari Threads memakai akun sendiri (@portofoliosaddam) — data mentah JSON disimpan & didokumentasikan asal-usulnya (data provenance + checksum SHA-256)',
+      'Pembersihan & deduplikasi 569 komentar berdasarkan ID komentar',
+      'Pelabelan sentimen dengan leksikon Bahasa Indonesia: normalisasi bahasa gaul (udh, jgn, gua) + penanganan negasi, terdokumentasi sebagai skrip Python yang bisa dijalankan ulang',
+      'Visualisasi dengan Matplotlib + penulisan insight beserta keterbatasan analisisnya (bias sampel & sarkasme)',
+    ],
+    tags: ['Python', 'Pandas', 'Matplotlib', 'Analisis Sentimen', 'Leksikon Bahasa Indonesia', 'Threads', 'Data Provenance'],
+    charts: [
+      {
+        src: 'grafik-sentimen/grafik1_distribusi_sentimen.png',
+        alt: 'Grafik batang distribusi sentimen 569 komentar Threads: netral 397, negatif 121, positif 51',
+        caption: 'Distribusi sentimen: mayoritas komentar bernada netral',
+      },
+      {
+        src: 'grafik-sentimen/grafik2_sentimen_per_thread.png',
+        alt: 'Grafik batang bertumpuk sentimen komentar pada tiga thread induk terbesar',
+        caption: 'Sentimen per thread induk: nada postingan menular ke komentarnya',
+      },
+      {
+        src: 'grafik-sentimen/grafik3_kata_khas.png',
+        alt: 'Grafik kata yang paling sering muncul di komentar negatif dan positif',
+        caption: 'Kata khas tiap kubu nada — nama Anies menonjol di komentar positif, MBG di komentar negatif',
+      },
+    ],
+  },
 ]

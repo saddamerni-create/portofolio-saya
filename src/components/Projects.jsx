@@ -5,8 +5,11 @@ export function Projects() {
   return (
     <Section id="proyek" overline="Proyek Data" title="Proyek Analisis Data">
       <div>
-        {projects.map((project) => (
-          <article key={project.title}>
+        {projects.map((project, index) => (
+          <article
+            key={project.title}
+            className={index === 0 ? '' : 'mt-24 border-t border-line pt-20'}
+          >
             <p className="text-[13px] font-medium leading-[1.5] text-faint">
               {project.category} — {project.period}
             </p>
