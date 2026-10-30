@@ -11,7 +11,7 @@ const links = [
 
 export function Navbar() {
   return (
-    <header className="border-b border-line bg-paper">
+    <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5 md:px-12">
         <a href="#beranda" className="flex items-center gap-3">
           <span className="flex h-10 w-10 items-center justify-center rounded-full bg-stone font-display text-[13px] font-bold text-paper">
