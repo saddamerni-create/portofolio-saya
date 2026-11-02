@@ -4,6 +4,8 @@ export function Hero() {
   return (
     <section id="beranda">
       <div className="mx-auto max-w-6xl px-6 py-[60px] md:px-12 md:py-[84px] lg:py-[120px]">
+        <div className="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-16">
+        <div>
         <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-stone">
           Portofolio — {profile.location}
         </p>
@@ -46,6 +48,21 @@ export function Hero() {
             </li>
           ))}
         </ul>
+        </div>
+
+        <figure className="mx-auto w-full max-w-[320px] border border-line bg-paper p-3 lg:mx-0">
+          <img
+            src={profile.photo}
+            alt={profile.photoAlt}
+            className="block w-full"
+            width="900"
+            height="1200"
+          />
+          <figcaption className="px-1 pb-1 pt-3 text-[13px] font-medium text-faint">
+            {profile.name} — {profile.location}
+          </figcaption>
+        </figure>
+        </div>
       </div>
     </section>
   )

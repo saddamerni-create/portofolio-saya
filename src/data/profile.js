@@ -13,6 +13,8 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/saddamabdurrasyid',
   linkedinLabel: 'linkedin.com/in/saddamabdurrasyid',
   cvFile: 'CV_Saddamabdurrasyid.pdf',
+  photo: 'foto-saddam.jpg',
+  photoAlt: 'Foto formal Saddam Abdurrasyid Al-Subadi',
   gpa: '3,41',
   degree: 'S1 Teknik Informatika',
   university: 'UIN Sultan Syarif Kasim Riau',
