@@ -83,6 +83,36 @@ export const education = {
 
 export const projects = [
   {
+    title:
+      'Text-to-Speech Multi-Speaker Bahasa Batak Mandailing dengan Metode VITS',
+    category: 'Tugas Akhir — Kecerdasan Buatan & Pemrosesan Suara',
+    period: '2026',
+    description:
+      'Penelitian tugas akhir: membangun sistem Text-to-Speech (TTS) multi-speaker untuk Bahasa Batak Mandailing — bahasa daerah yang minim sumber daya digital — menggunakan metode VITS. Satu model dilatih dari 1.000 rekaman dua penutur (laki-laki dan perempuan) hingga mampu mengubah teks Mandailing menjadi suara yang natural untuk kedua penutur, sebagai upaya pelestarian bahasa daerah berbasis kecerdasan buatan.',
+    stats: [
+      { value: '4,61', label: 'Skor MOS penutur laki-laki (skala 5, kategori sangat baik)' },
+      { value: '10%', label: 'Word Error Rate rata-rata (laki-laki 10,16% · perempuan 9,84%)' },
+      { value: '4,98 dB', label: 'Mel-Cepstral Distance rata-rata — kemiripan spektral dengan suara asli' },
+      { value: '1.000', label: 'Rekaman suara dari 500 kalimat × 2 penutur' },
+    ],
+    findings: [
+      'Satu model VITS mampu menyintesis dua penutur sekaligus (laki-laki dan perempuan), tanpa model terpisah untuk setiap penutur.',
+      'Kualitas subjektif sangat baik: MOS 4,61 untuk penutur laki-laki dan 4,55 untuk penutur perempuan, dinilai oleh 3 evaluator penutur asli pada 50 sampel uji.',
+      'WER rata-rata 10% menunjukkan pelafalan hasil sintesis mudah dipahami; penutur perempuan konsisten lebih akurat (WER 9,84% dan MCD 4,41 dB) dibandingkan penutur laki-laki (WER 10,16% dan MCD 5,55 dB).',
+      'MCD rata-rata 4,98 dB berada pada rentang 4–6 dB yang tergolong baik untuk neural TTS — karakteristik spektral suara sintesis dekat dengan rekaman aslinya.',
+      'VITS terbukti efektif untuk bahasa daerah ber-sumber daya rendah (low-resource) seperti Batak Mandailing, dan berpotensi mendukung pelestarian bahasa daerah berbasis AI.',
+    ],
+    charts: [],
+    process: [
+      'Merancang dan merekam dataset: 500 kalimat Bahasa Batak Mandailing direkam oleh 2 penutur menjadi 1.000 rekaman, dibagi 450 data latih dan 50 data uji per penutur.',
+      'Preprocessing: pembersihan audio, fonemisasi teks menggunakan eSpeak, dan penyusunan metadata multi-speaker.',
+      'Melatih model VITS multi-speaker hingga 20.000 langkah pada GPU NVIDIA A100 dengan mixed precision FP16.',
+      'Evaluasi subjektif Mean Opinion Score (MOS) oleh 3 evaluator penutur asli pada 50 sampel uji.',
+      'Evaluasi objektif Word Error Rate (WER) untuk akurasi pelafalan dan Mel-Cepstral Distance (MCD) untuk kemiripan spektral terhadap rekaman asli.',
+    ],
+    tags: ['Python', 'PyTorch', 'VITS', 'Text-to-Speech', 'Deep Learning', 'eSpeak', 'GPU NVIDIA A100', 'Evaluasi MOS · WER · MCD'],
+  },
+  {
     title: 'Analisis Karier Pemain Sepak Bola Indonesia di Luar Negeri (2018–2026)',
     category: 'Data Analysis',
     period: 'Oktober 2026',
