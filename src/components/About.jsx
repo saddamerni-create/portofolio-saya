@@ -18,7 +18,7 @@ export function About() {
         <p className="text-[17px] leading-[1.8] text-body">
           {profile.summary} Fokus saya ada pada bagaimana data dikelola dengan rapi
           dan bagaimana sistem informasi membuat pekerjaan menjadi lebih aman,
-          terstruktur, dan mudah diandalkan — dari perancangan basis data,
+          terstruktur, dan mudah diandalkan, dari perancangan basis data,
           pengembangan backend, sampai pengujian aplikasi web.
         </p>
 
