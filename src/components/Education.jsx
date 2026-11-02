@@ -1,4 +1,4 @@
-import { education } from '../data/profile'
+import { education, school, certifications } from '../data/profile'
 import { Section } from './Section'
 
 export function Education() {
@@ -27,6 +27,39 @@ export function Education() {
               Indeks Prestasi Kumulatif
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="mt-6 grid gap-6 md:grid-cols-2">
+        <div className="border border-line-medium bg-surface px-9 py-9">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-stone">
+            Pendidikan Menengah
+          </p>
+          <h3 className="mt-3 font-display text-[20px] font-normal leading-[1.4] tracking-[-0.01em] text-ink">
+            {school.major}
+          </h3>
+          <p className="mt-1 text-[15px] font-semibold text-stone">{school.school}</p>
+          <p className="mt-4 text-[15px] leading-[1.7] text-body">
+            {school.period} — Nilai akhir: {school.grade}
+          </p>
+        </div>
+
+        <div className="border border-line-medium bg-surface px-9 py-9">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-stone">
+            Sertifikasi
+          </p>
+          <ul className="mt-3 space-y-4">
+            {certifications.map((cert) => (
+              <li key={cert.name}>
+                <p className="text-[15px] font-semibold leading-[1.5] text-ink">
+                  {cert.name}
+                </p>
+                <p className="text-[14px] leading-[1.6] text-body">
+                  {cert.issuer} — {cert.date}
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </Section>

@@ -8,6 +8,7 @@ const facts = [
   { label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
   { label: 'Telepon', value: profile.phone, href: `tel:${profile.phoneInternational}` },
   { label: 'LinkedIn', value: profile.linkedinLabel, href: profile.linkedin },
+  { label: 'GitHub', value: profile.githubLabel, href: profile.github },
 ]
 
 export function About() {

@@ -27,6 +27,14 @@ export function Contact() {
             LinkedIn
           </a>
           <a
+            href={profile.github}
+            target="_blank"
+            rel="noreferrer"
+            className="border border-line-medium bg-transparent px-6 py-3 text-[15px] font-semibold leading-none text-stone transition-colors hover:bg-surface hover:text-stone-dark"
+          >
+            GitHub
+          </a>
+          <a
             href={profile.cvFile}
             download
             className="border border-line-medium bg-transparent px-6 py-3 text-[15px] font-semibold leading-none text-stone transition-colors hover:bg-surface hover:text-stone-dark"

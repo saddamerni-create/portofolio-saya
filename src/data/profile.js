@@ -5,13 +5,15 @@ export const profile = {
   name: 'Saddam Abdurrasyid Al-Subadi',
   shortName: 'Saddam Abdurrasyid',
   initials: 'SA',
-  role: 'IT & Data Management',
+  role: 'IT Support | Pengolahan Data',
   location: 'Pekanbaru, Riau',
   phone: '0823-8332-0066',
   phoneInternational: '+6282383320066',
   email: 'saddamsupriyanto@gmail.com',
   linkedin: 'https://www.linkedin.com/in/saddamabdurrasyid',
   linkedinLabel: 'linkedin.com/in/saddamabdurrasyid',
+  github: 'https://github.com/saddamerni-create',
+  githubLabel: 'github.com/saddamerni-create',
   cvFile: 'CV_Saddamabdurrasyid.pdf',
   photo: 'foto-saddam.jpg',
   photoAlt: 'Foto formal Saddam Abdurrasyid Al-Subadi',
@@ -22,7 +24,10 @@ export const profile = {
     'Lulusan S1 Teknik Informatika UIN Sultan Syarif Kasim Riau dengan IPK 3,41, ' +
     'memiliki pengalaman dalam pengembangan aplikasi web, pengelolaan basis data, ' +
     'dan sistem informasi. Menguasai SQL, Microsoft Excel, serta pemrograman dasar. ' +
-    'Memiliki kemampuan analitis, pemecahan masalah, dan kolaborasi tim yang baik.',
+    'Memiliki kemampuan analitis, pemecahan masalah, dan kolaborasi tim yang baik. ' +
+    'Berpengalaman juga dalam dukungan teknis aplikasi (pengujian, debugging, dan ' +
+    'pengelolaan akun & hak akses pengguna) serta operasional ritel dengan ketelitian ' +
+    'pengecekan stok dan kepatuhan pada SOP.',
   highlights: ['IPK 3,41', 'S1 Teknik Informatika', 'Web Developer Intern — Disdukcapil Pekanbaru'],
 }
 
@@ -48,6 +53,16 @@ export const experience = [
     tags: ['Promosi Operasional', 'Pelaporan', 'Relasi Pelanggan'],
   },
   {
+    role: 'Helper',
+    company: 'PT Sumber Alfaria Trijaya Tbk (Alfamart)',
+    period: 'Februari — Mei 2023',
+    description:
+      'Membantu bongkar muat barang dari pusat distribusi ke gudang toko, menata ' +
+      'barang di rak pajangan, dan mengecek ketersediaan stok serta menjaga ' +
+      'kebersihan area operasional toko.',
+    tags: ['Bongkar Muat', 'Pengecekan Stok', 'Penataan Display'],
+  },
+  {
     role: 'Barista',
     company: 'Cafe Pak Itam Reborn',
     period: '12 bulan',
@@ -68,9 +83,14 @@ export const skills = [
   'Software Testing & Debugging',
   'Data Preprocessing & Model Evaluation',
   'Microsoft Excel & Data Processing',
+  'IT Support & Troubleshooting Aplikasi',
+  'Manajemen Akun & Hak Akses Pengguna',
+  'Python & Pandas untuk Analisis Data',
+  'JavaScript',
+  'Git & GitHub',
 ]
 
-export const tools = ['PHP', 'CodeIgniter 4', 'Myth/Auth', 'MySQL', 'SQL', 'Microsoft Excel']
+export const tools = ['PHP', 'CodeIgniter 4', 'Myth/Auth', 'MySQL', 'SQL', 'Microsoft Excel', 'Python', 'Pandas', 'JavaScript', 'Git', 'GitHub']
 
 export const education = {
   university: 'UIN Sultan Syarif Kasim Riau',
@@ -80,6 +100,26 @@ export const education = {
   focus:
     'Pengembangan Perangkat Lunak, Basis Data, Analisis Sistem, dan Kecerdasan Buatan.',
 }
+
+export const school = {
+  school: 'SMK Negeri 4 Tanjungpinang',
+  period: '2018 — 2021',
+  major: 'Rekayasa Perangkat Lunak',
+  grade: '79,18',
+}
+
+export const certifications = [
+  {
+    name: 'Legacy JavaScript Algorithms and Data Structures V8',
+    issuer: 'freeCodeCamp',
+    date: 'Desember 2025',
+  },
+  {
+    name: 'Legacy Responsive Web Design v8',
+    issuer: 'freeCodeCamp',
+    date: 'Oktober 2025',
+  },
+]
 
 export const projects = [
   {
