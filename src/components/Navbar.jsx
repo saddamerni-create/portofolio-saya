@@ -14,9 +14,14 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-line bg-paper">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5 md:px-12">
         <a href="#beranda" className="flex items-center gap-3">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full bg-stone font-display text-[13px] font-bold text-paper">
-            {profile.initials}
-          </span>
+          <img
+            src={profile.photo}
+            alt={profile.photoAlt}
+            className="h-10 w-10 rounded-full border border-line-medium object-cover"
+            style={{ objectPosition: '50% 12%' }}
+            width="900"
+            height="1200"
+          />
           <span className="font-display text-[17px] font-bold text-ink">
             {profile.shortName}
           </span>
