@@ -8,7 +8,7 @@ function ProjectItem({ project, index }) {
   return (
     <article className={index === 0 ? '' : 'mt-24 border-t border-line pt-20'}>
       <p className="text-[13px] font-medium leading-[1.5] text-faint">
-        {project.category} — {project.period}
+        {project.category} · {project.period}
       </p>
       <h3 className="mt-2 max-w-[760px] font-display text-[24px] font-normal leading-[1.4] tracking-[-0.01em] text-ink">
         {project.title}

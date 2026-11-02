@@ -8,7 +8,7 @@ export function Contact() {
         <p className="text-[20px] leading-[1.75] text-body">
           Saya terbuka untuk peluang di bidang IT, pengelolaan data, dan
           pengembangan aplikasi web. Silakan hubungi saya melalui email atau
-          LinkedIn — atau unduh CV saya untuk detail lengkapnya.
+          LinkedIn, atau unduh CV saya untuk detail lengkapnya.
         </p>
 
         <div className="mt-12 flex flex-wrap gap-4">
@@ -50,8 +50,8 @@ export function Contact() {
             className="text-stone underline decoration-line-medium underline-offset-4 transition-colors hover:text-stone-dark"
           >
             {profile.phone}
-          </a>{' '}
-          — {profile.location}
+          </a>
+          , {profile.location}
         </p>
       </div>
     </Section>
@@ -63,7 +63,7 @@ export function Footer() {
     <footer className="border-t border-line">
       <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 py-9 text-[13px] leading-[1.5] text-faint md:flex-row md:items-center md:justify-between md:px-12">
         <p>
-          © 2026 {profile.name} — {profile.role}
+          © 2026 {profile.name} · {profile.role}
         </p>
         <p>{profile.location}, Indonesia</p>
       </div>

@@ -125,21 +125,21 @@ export const projects = [
   {
     title:
       'Text-to-Speech Multi-Speaker Bahasa Batak Mandailing dengan Metode VITS',
-    category: 'Tugas Akhir — Kecerdasan Buatan & Pemrosesan Suara',
+    category: 'Tugas Akhir, Kecerdasan Buatan & Pemrosesan Suara',
     period: '2026',
     description:
-      'Penelitian tugas akhir: membangun sistem Text-to-Speech (TTS) multi-speaker untuk Bahasa Batak Mandailing — bahasa daerah yang minim sumber daya digital — menggunakan metode VITS. Satu model dilatih dari 1.000 rekaman dua penutur (laki-laki dan perempuan) hingga mampu mengubah teks Mandailing menjadi suara yang natural untuk kedua penutur, sebagai upaya pelestarian bahasa daerah berbasis kecerdasan buatan.',
+      'Penelitian tugas akhir: membangun sistem Text-to-Speech (TTS) multi-speaker untuk Bahasa Batak Mandailing, bahasa daerah yang minim sumber daya digital, menggunakan metode VITS. Satu model dilatih dari 1.000 rekaman dua penutur (laki-laki dan perempuan) hingga mampu mengubah teks Mandailing menjadi suara yang natural untuk kedua penutur, sebagai upaya pelestarian bahasa daerah berbasis kecerdasan buatan.',
     stats: [
       { value: '4,61', label: 'Skor MOS penutur laki-laki (skala 5, kategori sangat baik)' },
       { value: '10%', label: 'Word Error Rate rata-rata (laki-laki 10,16% · perempuan 9,84%)' },
-      { value: '4,98 dB', label: 'Mel-Cepstral Distance rata-rata — kemiripan spektral dengan suara asli' },
+      { value: '4,98 dB', label: 'Mel-Cepstral Distance rata-rata, kemiripan spektral dengan suara asli' },
       { value: '1.000', label: 'Rekaman suara dari 500 kalimat × 2 penutur' },
     ],
     findings: [
       'Satu model VITS mampu menyintesis dua penutur sekaligus (laki-laki dan perempuan), tanpa model terpisah untuk setiap penutur.',
       'Kualitas subjektif sangat baik: MOS 4,61 untuk penutur laki-laki dan 4,55 untuk penutur perempuan, dinilai oleh 3 evaluator penutur asli pada 50 sampel uji.',
       'WER rata-rata 10% menunjukkan pelafalan hasil sintesis mudah dipahami; penutur perempuan konsisten lebih akurat (WER 9,84% dan MCD 4,41 dB) dibandingkan penutur laki-laki (WER 10,16% dan MCD 5,55 dB).',
-      'MCD rata-rata 4,98 dB berada pada rentang 4–6 dB yang tergolong baik untuk neural TTS — karakteristik spektral suara sintesis dekat dengan rekaman aslinya.',
+      'MCD rata-rata 4,98 dB berada pada rentang 4–6 dB yang tergolong baik untuk neural TTS, karakteristik spektral suara sintesis dekat dengan rekaman aslinya.',
       'VITS terbukti efektif untuk bahasa daerah ber-sumber daya rendah (low-resource) seperti Batak Mandailing, dan berpotensi mendukung pelestarian bahasa daerah berbasis AI.',
     ],
     charts: [],
@@ -158,7 +158,7 @@ export const projects = [
     period: 'Oktober 2026',
     description:
       'Mengumpulkan, memverifikasi, dan menganalisis perjalanan karier 38 pemain Indonesia ' +
-      'yang bermain di luar negeri — membandingkan pemain yang berangkat dari liga domestik ' +
+      'yang bermain di luar negeri, membandingkan pemain yang berangkat dari liga domestik ' +
       '(Lokal) dengan pemain yang tumbuh di luar negeri (Diaspora) untuk menjawab satu ' +
       'pertanyaan: kenapa banyak pemain Indonesia yang abroad akhirnya pulang kampung?',
     stats: [
@@ -168,13 +168,13 @@ export const projects = [
       { value: '12,3 vs 38,3', label: 'Rata-rata penampilan liga per spell: Lokal vs Diaspora' },
     ],
     findings: [
-      'Pemain lokal rata-rata hanya tampil 12,3 kali per spell di liga luar negeri (median 7,5), berbanding 38,3 kali untuk pemain diaspora — dan 9 spell berakhir dengan 0 penampilan.',
+      'Pemain lokal rata-rata hanya tampil 12,3 kali per spell di liga luar negeri (median 7,5), berbanding 38,3 kali untuk pemain diaspora, dan 9 spell berakhir dengan 0 penampilan.',
       'Belanda adalah negara tujuan utama (24 dari 91 spell), sedangkan jalur abroad pemain lokal yang paling berhasil justru Asia: Asnawi Mangkualam membangun kariernya di Korea Selatan dan Thailand.',
       'Penyerang adalah posisi yang paling sulit menembus abroad (rata-rata 9,8 penampilan per spell); kiper dan bek adalah yang paling bertahan lama.',
     ],
     process: [
       'Pengumpulan data dari sumber publik (Wikipedia, Transfermarkt, FotMob)',
-      'Verifikasi silang setiap baris data — 25+ koreksi ditemukan dan didokumentasikan',
+      'Verifikasi silang setiap baris data, 25+ koreksi ditemukan dan didokumentasikan',
       'Pembersihan & standarisasi data (satu baris = satu masa bermain di satu klub)',
       'Analisis dengan SQL & Python (Pandas), visualisasi dengan Matplotlib',
     ],
@@ -204,7 +204,7 @@ export const projects = [
   },
   {
     title: 'Analisis Sentimen Komentar Threads: 2 Tahun Prabowo-Gibran & Demo',
-    category: 'Data Analysis — Social Media',
+    category: 'Data Analysis, Social Media',
     period: 'Oktober 2026',
     description:
       'Mengumpulkan 569 komentar publik dari thread-thread Threads bertema dua tahun pemerintahan ' +
@@ -213,16 +213,16 @@ export const projects = [
     stats: [
       { value: '569', label: 'Komentar publik dianalisis (dari 1.703 yang tersedia)' },
       { value: '7', label: 'Thread induk bertema 2 tahun Prabowo-Gibran & demo' },
-      { value: '69,8%', label: 'Komentar bernada netral — mayoritas ternyata tidak emosional' },
+      { value: '69,8%', label: 'Komentar bernada netral, mayoritas ternyata tidak emosional' },
       { value: '2,4 : 1', label: 'Negatif vs positif di antara komentar yang bernada jelas' },
     ],
     findings: [
-      'Mayoritas komentar (69,8%) bernada netral — percakapan di thread viral ternyata tidak seemosional kesan yang ditimbulkan postingan induknya; komentar negatif 21,3% dan positif 9,0%.',
+      'Mayoritas komentar (69,8%) bernada netral, percakapan di thread viral ternyata tidak seemosional kesan yang ditimbulkan postingan induknya; komentar negatif 21,3% dan positif 9,0%.',
       'Nada thread induk menular: thread dengan postingan paling keras menghasilkan proporsi komentar negatif tertinggi (±29%), sedangkan satu-satunya thread bernada pro-pemerintah hanya menarik 5 komentar.',
-      'Nada positif tidak sama dengan dukungan ke pemerintah — komentar positif dengan like terbanyak justru berisi semangat mendukung aksi demo. Analisis ini mengukur nada bahasa, bukan keberpihakan politik.',
+      'Nada positif tidak sama dengan dukungan ke pemerintah, komentar positif dengan like terbanyak justru berisi semangat mendukung aksi demo. Analisis ini mengukur nada bahasa, bukan keberpihakan politik.',
     ],
     process: [
-      'Pengumpulan data langsung dari Threads memakai akun sendiri (@portofoliosaddam) — data mentah JSON disimpan & didokumentasikan asal-usulnya (data provenance + checksum SHA-256)',
+      'Pengumpulan data langsung dari Threads memakai akun sendiri (@portofoliosaddam), data mentah JSON disimpan & didokumentasikan asal-usulnya (data provenance + checksum SHA-256)',
       'Pembersihan & deduplikasi 569 komentar berdasarkan ID komentar',
       'Pelabelan sentimen dengan leksikon Bahasa Indonesia: normalisasi bahasa gaul (udh, jgn, gua) + penanganan negasi, terdokumentasi sebagai skrip Python yang bisa dijalankan ulang',
       'Visualisasi dengan Matplotlib + penulisan insight beserta keterbatasan analisisnya (bias sampel & sarkasme)',
@@ -242,7 +242,7 @@ export const projects = [
       {
         src: 'grafik-sentimen/grafik3_kata_khas.png',
         alt: 'Grafik kata yang paling sering muncul di komentar negatif dan positif',
-        caption: 'Kata khas tiap kubu nada — nama Anies menonjol di komentar positif, MBG di komentar negatif',
+        caption: 'Kata khas tiap kubu nada, nama Anies menonjol di komentar positif, MBG di komentar negatif',
       },
     ],
   },
