@@ -40,7 +40,7 @@ export const experience = [
   {
     role: 'Brand Promoter',
     company: 'PT Gudang Garam Tbk',
-    period: '6 bulan',
+    period: 'September — Desember 2024',
     description:
       'Melaksanakan kegiatan promosi operasional dan pelaporan aktivitas dengan ' +
       'memberikan edukasi produk serta membangun interaksi profesional bersama ' +
